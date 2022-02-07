@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+ .container{
+        width: 100%;
+        min-height: 100vh;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+.logo img{
+    width:250px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+nav ul{
+    
+    flex: 1;
+    text-align: right;
+    align-items: center;
+    
+    
+}
+nav ul li{
+    display: inline;
+    font-size: 15px;
+    margin: 30px;
+    
+}
+nav ul li a{
+    color: black;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    color: #1b9bff;
+    transition: .5s;
+
+}
+.landing{
+   
+   
+   text-align: center;
+  
+   
+}
+
+ .navv{
+     
+        width: 40px;
+        cursor: pointer;
+        display: none;
+     
+
+        
+
+    }
+    .landing h3 {
+        font-family: Poppins Medium;
+        font-size: 40px;
+        color: rgb(77, 192, 77)
+        /* animation: typing 3.5s steps(40, end) infinite;
+        overflow: hidden; */
+        
+        
+        
+    }
+    .landing p{
+        font-family: Myanmar Text;
+    }
+    .landing button{
+        width: 10%;
+        padding: 5px;
+        margin: 5px;
+        background-color: rgb(54, 107, 54);
+        color: white;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    .ln2{
+        text-align: center;
+         font-family: Poppins Medium;
+        font-size: 20px;
+        color: rgb(77, 192, 77);
+        
+    }
+    .ln2 p{
+        color: black;
+        font-size: 20px;
+    }
+    .line-under-about{
+        width: 20%;
+        height: 1px;
+        background-color:  rgb(88, 86, 82);
+        margin-left: 40%;
+
+    }
+    .readmore{
+         width: 10%;
+        padding: 5px;
+        margin: 5px;
+        background-color: rgb(77, 192, 77);
+        color: black;
+        border: none;
+        border-radius: 7px;
+    }
+    .images {
+        
+        size: 100%;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .images img{
+        width: 30%;
+        margin: 25px;
+        
+        
+    }
+    .contact{
+        width: 100%;
+        
+    }
+    .contact img{
+        width: 25%;
+    }
+    .contact h3{
+        font-family: Poppins Medium;
+        font-size: 20px;
+        color: rgb(77, 192, 77);
+        text-align: center;
+    }
+    .hoo{
+        display: flex;
+        
+    }
+    .hoo h4{
+        margin-top: 150px;
+        color:rgb(77, 192, 77); 
+        font-size: 20px;
+    }
+    footer p{
+        text-align: center;
+    }
+    .images img{
+        animation: slide 5s linear infinite;
+    } 
+    #moh a{
+            color: white;
+        }
+
+    #pdf a{
+            color: white;
+        }
+
+    @keyframes slide{
+       /* for{
+           width: 0%;
+           margin-left: 20%;
+       }
+       to{
+           width: 100%;
+           margin-left: -4%;
+       }
+        */
+    } 
+    
+    /* @keyframes typing{
+        from {width: 200px}
+        to {
+            width: 100%;
+        }
+    } */
+    
+    @media (max-width:1027px){
+        .landing button{
+            width: 35%;
+        }
+
+    }
+     @media (max-width:952px){
+         label.logo{
+             width: 14px;
+         }
+       
+             
+         
+     }
+
+    @media (max-width:858px){
+        nav ul li a{display: flex;
+        flex-direction: column;}
+       label.logo{
+            width: 100%;
+        }
+        nav ul{
+            width: 100%;
+            position: absolute;
+            top: 140px;
+            left: 40px;
+            
+
+
+        }
+
+        
+        nav ul li a{
+           font-size: 10px;
+           position: relative;
+           left: 12px;
+           color: white;
+           font-family: sans-serif;
+           text-align: left;
+            
+        }
+        ul{
+           position: fixed;
+           transition: all .5s;
+           z-index: 2;
+           display: inline;
+           
+          
+        }
+        
+        .navv{
+            display: block;
+        }
+        #menulist{
+            display: inline;
+            opacity: 98%;
+            border-radius: 5px;
+           width: 83%;
+            overflow: hidden;
+            transition: .5s;
+             background-color: rgb(62, 155, 62);
+        }
+        .landing {
+            
+            
+            text-align: center;
+        }
+        .fil button{
+            
+
+            width: 35%;
+            flex-direction: column-reverse;
+            align-items:center ;
+            text-align: center;
+            align-self: center;
+            cursor: pointer;
+            
+        }
+        @keyframes scrol {
+            for{
+                width: 19px;
+            }
+            after{
+                width: 129px;
+            }
+            
+        }
+        #moh a{
+            color: white;
+        }
+        
+        .fil{
+           display: flex;
+           flex-direction: column;
+           align-content: center;
+        }
+        .readmore{
+            width: 20%;
+        }
+        .images{
+            flex-direction: column;
+            
+        }
+        .images img{
+            width: 90%;
+            border-radius: 5px;
+            animation: scrol 3.5s steps(40, end) infinite;
+        overflow: hidden; 
+        }
+
+        .contact{
+            
+        width: 100%;
+       align-content: center;
+        
+    }
+    .contact img{
+        width: 60%;
+        align-self: center;
+        align-items: center;
+        align-self: center;
+    }
+    .contact h3{
+        font-family: Poppins Medium;
+        font-size: 20px;
+        color: rgb(77, 192, 77);
+        text-align: center;
+    }
+    .hoo{
+        display: flex;
+        flex-direction: column;
+        margin: 2px;
+        
+    }
+    .hoo h4{
+        margin-top: 1px;
+        color:rgb(77, 192, 77); 
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    }
+   
+
+
+
+
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moha</title>
+    <link rel="stylesheet" href="moha.css">
+</head>
+<body>
+    <div class="container">
+    <nav>
+        <label id="home" class="logo"><img src="my logo.png"></label>
+        
+        <ul id="menulist">
+            <li><a  href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        
+        <img src="menu_btn.png" class="navv" onclick="togglemenu9()">
+    </nav>
+         <div class="landing">
+             <h3>Hello! Welcome</h3>
+             <P>I like making new things and meeting<br> new peaple.</P>
+             <div class="fil">
+             <button id="moh"><a href="form.html">Hire me</a> </button><button id="pdf"> <a href="Maxamed.pdf">Download CV</a> </button></div>
+         </div><br><br><br>
+
+         <div id="about" class="ln2">
+             <h3>
+                 About Me
+             </h3>
+             <div class="line-under-about"></div><br>
+             <p>
+                My name is mohammed mohamoud abdilaahi (Aare), this is
+                My first responsive website that built by html css and few java script, “alxamdulilaah” I am so gland to make this,
+                Difficult roads often lead to beautiful destination.
+
+           </p>
+           
+           <br><br><br>
+           <h3 id="gallery">Gallery</h3>
+        <div class="line-under-about"></div><br>
+
+        <div class="images">
+            <img src="IMG_23mz9x.jpg" >
+            <img src="20211015_214615.jpg">
+           
+
+
+        </div>
+        
+        <div class="images">
+            <img src="FB_IMG_16209297879052879.jpg">
+            <img src="status_me_status_IMG-20210730-WA0003.jpg" >
+        </div>
+
+
+         </div>
+         <br>
+         
+         <br>
+        <div id="contact" class="contact">
+            <h3>Contact Me </h3>
+            <div class="line-under-about"></div>
+            <div class="hoo">
+            <img src="mohamed.png"> <h4>mmaxamed403@gmail.com <br><br> +252 063 6063409</h4></div>
+
+
+        </div><hr><br>
+             
+        <footer>
+            <p>&copy 2022 All rights reserved.developed by mohamed (Aare)</p>
+        </footer><br>
+                
+                 
+                 
+                
+            
+                
+
+        
+
+        
+    
+    </div>
+    <script>
+        var menulist = document.getElementById("menulist");
+        menulist.style.maxHeight = "0px";
+        function togglemenu9() {
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "130px"
+            } else {
+                menulist.style.maxHeight = "0px"
+            }
+        }
+      var typed=new typed('.animate',{
+
+        String:[
+            "coming",
+            "soon",
+            "insha allah...."
+        ],typedSpeed:50,
+        backSpeed: 50,
+      }
+      
+      
+      )
+        
+    </script>
+</body>
+</html>
